@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+  <script>
+  $(function () {
+      var messages = [],
+          index = 0;
+  
+      messages.push('Message 1');
+      messages.push('Message 2');
+      messages.push('Message 3');
+  
+      function cycle() {
+          $('#some-id').html(messages[index]);
+          index++;
+  
+          if (index === messages.length) {
+              index = 0;
+          }
+  
+          setTimeout(cycle, 3000);
+      }
+  
+      cycle();
+  });
+  </script>
+  <div id="some-id"></div>
+</head>
+
+<body onclick="soup()">
+
+  <h1><span id="text"></span></h1>
+
+</body>
+
+</html>
+
+</html>
