@@ -1,0 +1,15 @@
+a {
+    color: #0589fe;
+    text-decoration:underline;
+}
+
+.pink-background {
+    color:#51000f;
+    background-color: #ff69b4;
+}
+
+#my-name {
+    color:#0EEADF;
+    background-color: #004523;
+    padding: 10px;
+}
